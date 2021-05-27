@@ -5,17 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- <link rel="stylesheet" href="assets/css/fontawesome.css" /> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
+  body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+  body {font-size:16px;}
+  .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+  .w3-half img:hover{opacity:1}
 </style>
 
 <body>
+  
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
@@ -24,12 +24,12 @@ body {font-size:16px;}
     <h3 class="w3-padding-64"><b><!-- Insert others here --><br> <!-- Insert others here --> </b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#about-me" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About me</a> 
-    <a href="#methodology" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Methodolgy</a> 
-    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Projects</a> 
-    <a href="#template" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Template</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-home" style="font-size:20px;color:white;padding-right: 15px"></i>Home</a> 
+    <a href="#about-me" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-user-alt" style="font-size:20px;color:white;padding-right: 15px"></i>About me</a> 
+    <a href="#methodology" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-tools" style="font-size:20px;color:white;padding-right: 15px"></i>Methodology</a> 
+    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-tasks" style="font-size:20px;color:white;padding-right: 15px"></i>Projects</a> 
+    <a href="#template" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fas fa-file-alt" style="font-size:20px;color:white;padding-right: 15px"></i>Template</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-phone-alt" style="font-size:20px;color:white;padding-right: 15px"></i>Contact</a>
   </div>
 </nav>
 
@@ -52,7 +52,7 @@ body {font-size:16px;}
   
   <!-- About me -->
   <div class="w3-container" style="margin-top:80px" id="about-me">
-    <h1 class="w3-xxxlarge w3-text-red"><b>About me.</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><i class="fa fa-user-alt" style="font-size:40px;color:red;padding-right: 15px"></i><b>About me.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
     <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
@@ -63,7 +63,7 @@ body {font-size:16px;}
 
   <!--Methodology -->
   <div class="w3-container" id="methodology" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Methodology.</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><i class="fas fa-tools" style="font-size:40px;color:red;padding-right: 15px"></i><b>Methodology.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>The OSEMN framework is adopted for all of my data science. Why so, you may ask? Particularly, this  </p>
     <p> <b>O</b>: <b>O</b>btain data <br>
@@ -82,38 +82,45 @@ body {font-size:16px;}
 
   <!-- Projects -->
   <div class="w3-container" id="projects" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Project.</b></h1>
+    </i></a><h1 class="w3-xxxlarge w3-text-red"><i class="fa fa-tasks" style="font-size:40px;color:red;padding-right: 15px"></i><b>Project.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <i class="fa fa-tasks" style="font-size:48px;color:red;padding-right: 15px"></i></a>
-    <i class="fa fa-atlas" style="font-size:48px;color:red;padding-right: 15px"></i></a>
-<!--     
-    **Classifiers:**
-1.   Decision tree model #1
-  *   Dataset: Framingham heart study dataset
-  *   Business question: How likely is a person getting coronary heart disease according to different risk factors?
 
-2.   Decision tree model #2
-  *   Dataset: Telco churn dataset
-  *   Business question: How likely is a customer to churn depending on their subscription plan? 
+    <h1 class="w3-xlarge w3-text-black"><b>#1 Decision tree</b></h1>
+    <li>Dataset<span style="padding-left:136px">:</span> Framingham heart study</li>
+    <li>Business question<span style="padding-left:56px">:</span> How likely is a person getting coronary heart disease according to different risk factors?</li>
+    <li>Machine learning model  : Decision Tree (Classifier)</li>
 
-**Predictors:**
-1.   Linear regression model (Single Input, Single Output - SISO model)
-  *   Dataset: Height and Weight dataset
-  *   Business question: What would be the predicted weight of a person given their height?
+    <p>
+      <h1 class="w3-xlarge w3-text-black"><b>#2 Decision tree</b></h1>
+      <li>Dataset<span style="padding-left:136px">:</span> Telco churn</li>
+      <li>Business question<span style="padding-left:56px">:</span> How likely is a customer to churn depending on their subscription plan? </li>
+      <li>Machine learning model  : Decision Tree (Classifier)</li>
+    </p>
 
-1.   Linear regression model (Multiple Input, Single Output - MISO model)
-  *   Dataset: Advertisement expenditures dataset
-  *   Business question: What would be the sales forecast depending on the expenditures of advertisement on different platform? 
+    <p>
+      <h1 class="w3-xlarge w3-text-black"><b>#3 Decision tree</b></h1>
+      <li>Dataset<span style="padding-left:136px">:</span> Height and weight </li>
+      <li>Business question<span style="padding-left:56px">:</span> What would be the predicted weight of a person given their height? </li>
+      <li>Machine learning model  : Linear Regression (Predictor - Single Input, Single Output)</li>
+    </p>
 
-2.   Logistic regression model
-  *   Dataset: Human Resource Attrition
-  *   Business question: How likely is a staff leaving the company under different circumstances? -->
+    <p>
+      <h1 class="w3-xlarge w3-text-black"><b>#4 Decision tree</b></h1>
+      <li>Dataset<span style="padding-left:136px">:</span> Advertisment expenditures</li>
+      <li>Business question<span style="padding-left:56px">:</span> What is the sales forecast after advertistement expenditures on different platform? </li>
+      <li>Machine learning model  : Linear Regression (Predictor - Multiple Input, Single Output)</li>
+    </p>
 
-  </div>
-      
+    <p>
+      <h1 class="w3-xlarge w3-text-black"><b>#5 Decision tree</b></h1>
+      <li>Dataset<span style="padding-left:136px">:</span> Human Resource Attrition</li>
+      <li>Business question<span style="padding-left:56px">:</span> How likely is a staff leaving the company under different circumstances?</li>
+      <li>Machine learning model  : Logistics Regression (Predictor)</li>
+    </p>
+  
   <!-- Template -->
   <div class="w3-container" id="template" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Template.</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><i class="fas fa-file-alt" style="font-size:40px;color:red;padding-right: 15px"></i><b>Template.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>This is a my personal template for the completed projects. Please let me know if you guys have any feedback!  </p>
     <a href="https://colab.research.google.com/drive/1COcNTeUIl29XcjhCtlN-QzXatOSTROXS?usp=sharing"><i class="fa fa-book" style="font-size:48px;color:red;padding-right: 15px"></i></a>
@@ -121,13 +128,14 @@ body {font-size:16px;}
 
   <!-- Contact -->
   <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><i class="fas fa-phone-alt" style="font-size:40px;color:red;padding-right: 15px"></i><b>Contact.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>Connect with me :) I love meeting new people!</p>
+    
+
     <div class="social-network">
-        <a href="https://github.com/sccyds"><i class="fa fa-github" style="font-size:48px;color:red;padding-right: 15px"></i></a>
-        
-        <a href="https://www.linkedin.com/in/chanchunyuan/"><i class="fa fa-linkedin" style="font-size:48px;color:red"></i></a>
+      <a href="https://www.linkedin.com/in/chanchunyuan/"><i class="fab fa-linkedin" style="font-size:48px;color:red;padding-right: 15px"></i></a>
+      <a href="https://github.com/sccyds"><i class="fab fa-github" style="font-size:40px;color:red;padding-right: 15px"></i></a> 
     </div>
   </div>   
 
