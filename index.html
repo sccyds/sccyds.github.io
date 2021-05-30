@@ -14,9 +14,24 @@
   .w3-half img:hover{opacity:1}
 </style>
 
-<body>
-  
+<head>
+  <style type="text/css">
+    .zoomin img {
+      /* height: 200px;
+      width: 200px; */
+      -webkit-transition: all 2s ease;
+      -moz-transition: all 2s ease;
+      -ms-transition: all 2s ease;
+      transition: all 2s ease;
+    }
+    .zoomin img:hover {
+      -webkit-transform:scale(1.5); /* or some other value */
+      transform:scale(1.5);
+    }
+  </style>
+</head>
 
+<body>
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
@@ -85,41 +100,107 @@
     </i></a><h1 class="w3-xxxlarge w3-text-red"><i class="fa fa-tasks" style="font-size:40px;color:red;padding-right: 15px"></i><b>Project.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
 
-    <h1 class="w3-xlarge w3-text-black"><b>#1 Decision tree</b></h1>
-      <ul>
-        <li>Dataset<span style="padding-left:136px">:</span> Framingham heart study</li>
-        <li>Business question<span style="padding-left:56px">:</span> How likely is a person getting coronary heart disease according to different risk factors?</li>
-        <li>Machine learning model  : Decision Tree (Classifier)</li>
-      </ul>
-
-    <p><h1 class="w3-xlarge w3-text-black"><b>#2 Decision tree</b></h1>
+    <p><h1 class="w3-xlarge w3-text-black"><b>#1 Classifier (Decision Tree)</b></h1>
       <ul>
         <li>Dataset<span style="padding-left:136px">:</span> Telco churn</li>
         <li>Business question<span style="padding-left:56px">:</span> How likely is a customer to churn depending on their subscription plan? </li>
-        <li>Machine learning model  : Decision Tree (Classifier)</li>
+        <li>Exploratory data analysis<span style="padding-left:56px">:</span></li>
+      </ul>
+
+        <!-- EDA -->
+        <div class="w3-row-padding w3-grayscale">
+          <div class="w3-col m4 w3-margin-bottom">
+            <div class="w3-light-grey">
+              <img src="file:///Users/sebastian/Documents/Portfolio/images/team2.jpg" alt="John" onclick="onClick(this)" style="width:100%;cursor:pointer" 
+              onclick="onClick(this)" class="w3-hover-opacity">
+              <div class="w3-container">
+                <h3>John Doe</h3>
+                <p class="w3-opacity">CEO & Founder</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-col m4 w3-margin-bottom">
+            <div class="w3-light-grey">
+              <img src="file:///Users/sebastian/Documents/Portfolio/images/team1.jpg" alt="Jane" onclick="onClick(this)" style="width:100%">
+              <div class="w3-container">
+                <h3>Jane Doe</h3>
+                <p class="w3-opacity">Designer</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-col m4 w3-margin-bottom">
+            <div class="w3-light-grey">
+              <img src="file:///Users/sebastian/Documents/Portfolio/images/team3.jpg" alt="Mike" onclick="onClick(this)" style="width:100%">
+              <div class="w3-container">
+                <h3>Mike Ross</h3>
+                <p class="w3-opacity">Architect</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+<!-- 
+      <div class="w3-row-padding w3-grayscale">
+        <div class="w3-container w3-third">
+          <img src="f" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+        <div class="w3-container w3-third">
+          <img src="file:///Users/sebastian/Documents/Portfolio/images/team2.jng" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+        <div class="w3-container w3-third">
+          <img src="file:///Users/sebastian/Documents/Portfolio/images/team3.jng" style="width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="w3-hover-opacity">
+        </div>
+      </div>
+           -->
+    
+<!-- 
+    <div class="w3-row-padding w3-grayscale">
+      <div class="w3-container w3-third w3-col m4 w3-margin-bottom">
+        <img src="file:///Users/sebastian/Documents/Portfolio/images/team1.jpg" style="width:100%;cursor:pointer" 
+        onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+      <div class="w3-container w3-third">
+        <img src="file:///Users/sebastian/Documents/Portfolio/images/team2.jpg" style="width:100%;cursor:pointer" 
+        onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+      <div class="w3-container w3-third">
+        <img src="file:///Users/sebastian/Documents/Portfolio/images/team3.jpg" style="width:100%;cursor:pointer" 
+        onclick="onClick(this)" class="w3-hover-opacity">
+      </div>
+    </div>
+    
+    <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+      <div class="w3-modal-content w3-animate-zoom">
+        <img id="img01" style="width:100%"> 
+    </div>
+           -->
+      
       </ul></p>
 
-    <p><h1 class="w3-xlarge w3-text-black"><b>#3 Decision tree</b></h1>
-      <ul>
-        <li>Dataset<span style="padding-left:136px">:</span> Height and weight </li>
-        <li>Business question<span style="padding-left:56px">:</span> What would be the predicted weight of a person given their height? </li>
-        <li>Machine learning model  : Linear Regression (Classifier - Single Input, Single Output)</li>
-      </ul></p>
-
-    <p><h1 class="w3-xlarge w3-text-black"><b>#4 Decision tree</b></h1>
+    <p><h1 class="w3-xlarge w3-text-black"><b>#2 Predictor (Linear Regression)</b></h1>
       <ul>
         <li>Dataset<span style="padding-left:136px">:</span> Advertisment expenditures</li>
         <li>Business question<span style="padding-left:56px">:</span> What is the sales forecast after advertistement expenditures on different platform? </li>
-        <li>Machine learning model  : Linear Regression (Predictor - Multiple Input, Single Output)</li>
       </ul></p>
 
-      <p><h1 class="w3-xlarge w3-text-black"><b>#5 Decision tree</b></h1>
+    <p><h1 class="w3-xlarge w3-text-black"><b>#3 Natural Language Processing (Sentiments Analysis)</b></h1>
       <ul>
         <li>Dataset<span style="padding-left:136px">:</span> Human Resource Attrition</li>
         <li>Business question<span style="padding-left:56px">:</span> How likely is a staff leaving the company under different circumstances?</li>
-        <li>Machine learning model  : Logistics Regression (Classifier)</li>
       </ul></p>
-    </div> 
+
+    <p><h1 class="w3-xlarge w3-text-black"><b>#4 Visualization and Classifier (Logistics Regression)</b></h1>
+      <ul>
+        <li>Dataset<span style="padding-left:136px">:</span> Human Resource Attrition</li>
+        <li>Business question<span style="padding-left:56px">:</span> How likely is a staff leaving the company under different circumstances?</li>
+      </ul></p>
+  </div> 
 
   <!-- Template -->
   <div class="w3-container" id="template" style="margin-top:75px">
@@ -142,23 +223,23 @@
     </div>
   </div>   
 
-   <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
+  <!-- Photo grid (modal) -->
+  <!-- <div class="w3-row-padding">
     <div class="w3-half">
-      <img src="/images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
-      <img src="/images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
-      <img src="/images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+      <img src="/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
     </div>
 
     <div class="w3-half">
-      <img src="/images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img src="/images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
-      <img src="/images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+      <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
     </div>
-  </div>
+  </div> -->
 
   <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+  <!-- <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
     <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
     <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
       <img id="img01" class="w3-image">
@@ -170,11 +251,11 @@
   
 
 
-<!--   The Team -->
+  <!-- The Team
   <div class="w3-row-padding w3-grayscale">
     <div class="w3-col m4 w3-margin-bottom">
       <div class="w3-light-grey">
-        <img src="/images/team2.jpg" alt="John" onclick="onClick(this)" style="width:100%">
+        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
         <div class="w3-container">
           <h3>John Doe</h3>
           <p class="w3-opacity">CEO & Founder</p>
@@ -184,7 +265,7 @@
     </div>
     <div class="w3-col m4 w3-margin-bottom">
       <div class="w3-light-grey">
-        <img src="/images/team1.jpg" alt="Jane" onclick="onClick(this)" style="width:100%">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
         <div class="w3-container">
           <h3>Jane Doe</h3>
           <p class="w3-opacity">Designer</p>
@@ -194,7 +275,7 @@
     </div>
     <div class="w3-col m4 w3-margin-bottom">
       <div class="w3-light-grey">
-        <img src="/images/team3.jpg" alt="Mike" onclick="onClick(this)" style="width:100%">
+        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
         <div class="w3-container">
           <h3>Mike Ross</h3>
           <p class="w3-opacity">Architect</p>
@@ -202,7 +283,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Packages / Pricing Tables -->
   <!-- <div class="w3-container" id="packages" style="margin-top:75px">
@@ -272,7 +353,7 @@
 </div>
 
 <!-- W3.CSS Container -->
-<!-- <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div> -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
 <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by tea, not coffee!</p></div>
 
 <script>
